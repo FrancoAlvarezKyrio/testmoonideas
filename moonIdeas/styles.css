@@ -1,0 +1,550 @@
+/* ESTILOS PARA SECCIÓN HEADER */
+
+/* Nav */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    background-color: white;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+    z-index: 1;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.nav-links{
+    color: #000;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; 
+}
+.nav-link{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; 
+}
+.nav-link.underlined {
+    text-decoration: underline;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; 
+}
+
+.nav-link.bold {
+    font-weight: bold;
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo svg {
+    margin: 0 auto; 
+}
+
+
+/* Links */
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+/* Icons */
+.nav-icons {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-icon {
+    margin-right: 20px;
+}
+
+
+
+/* Menu hamburguesa */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+/* Desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 200px;
+    padding-left: 20px;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* SECCIÓN BODY*/
+
+/* Banner principal galería carousel con 3 imagenes*/
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    height: 858px; 
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Productos favoritos*/
+.favorites {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.favorites h2 {
+    color: #000;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Producto*/
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: 30%; 
+    margin-bottom: 20px;
+    color: #000;
+    font-family: SF Pro Display;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product-info h3 {
+    margin: 0;
+    font-weight: lighter;
+}
+
+.divPrecioProdu{
+    text-align: left;
+}
+
+.precioProdu {
+    color: #000;
+    font-family: SF Pro Display;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+
+
+/* Banner Colección*/
+.bannerColeccionContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bannerColeccionContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.bannerColeccionText {
+    position: absolute;
+    top: 60%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2; 
+}
+
+.bannerColeccionText h3 {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: -5px;
+    }
+
+.bannerColeccionText a {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-left: -265px;
+}
+
+
+
+
+
+
+
+/* SECCIÓN FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+footer h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+/* Newsletter */
+#newsletterSpan{
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+#newsletterInputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#newsletterInput {
+    padding: 10px;
+    border: none;
+    width: 40%;
+}
+
+#subscribeButton {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+
+@media screen and (max-width: 390px) {
+
+    /* Nav*/
+    nav {
+    background-color: white;
+    height: 50px;
+    width: 85%;
+    position: fixed;
+    }
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo svg {
+        margin: 0; 
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul a {
+        margin-left: -50px;
+    }
+
+
+
+
+
+    /* Menú hamburguesa*/
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: black;
+        padding: 10px;
+    }
+
+    .bar {
+        margin: 2px 0;
+        background-color: black;
+
+    }
+
+    nav ul, .hamburger-menu {
+        position: fixed;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    .nav-icons {
+        display: none;
+    }
+
+    .dropdown-content a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        margin-left: 10px;
+    }
+
+
+
+
+
+    /* Galería carousel */
+    .carousel-container {
+        overflow: hidden;
+        width: 100%;
+        height: 400px; 
+    }
+    
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel img {
+        width: 100%;
+        height: 400px;
+    }
+    
+
+
+
+
+    /* Producto */
+    .product {
+        width: 90%; 
+        margin-top: 30px;
+    }
+
+
+
+
+
+
+
+
+    /* Banner colección*/
+    .bannerColeccionContainer {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .bannerColeccionText {
+        position: absolute;
+        top: 75%;
+        left: 35%;
+        color: white;
+        text-align: left;
+    }
+    
+    .bannerColeccionText h3 {
+        color: #FFF;
+        font-family: SF Pro Display;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 100%;
+    }
+    
+    .bannerColeccionText a {
+        color: #FFF;
+        font-family: SF Pro Display;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+        background-color: #f1f1f100;
+        margin-bottom: 1000px;
+        margin-left: 5px;
+        margin-top: -10px;
+    }
+
+    .bannerColeccionContainer img {
+        width: 390px !important;
+        height: 400px;
+    }
+    
+
+
+
+
+
+    /* SECCIÓN FOOTER */
+    footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-top: -50px;
+    }
+    
+    footer h2 {
+        color: #FFF;
+        text-align: center;
+        font-family: SF Pro Display;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        
+    }
+    
+    /* Newsletter */
+    #newsletterSpan{
+        color: #FFF;
+        font-family: SF Pro Display;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    
+    #newsletterInputWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 120px;
+        background-color: rgb(214, 212, 212);
+    }
+    
+    #newsletterInput {
+        padding: 10px;
+        border: none;
+        width: 40%;
+        background-color: rgb(214, 212, 212);
+    }
+    
+    #subscribeButton {
+        padding: 10px 20px;
+        background-color: rgb(255, 255, 255); 
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+        font-weight: bolder;
+        background-color: rgb(214, 212, 212);
+    }
+
+}
